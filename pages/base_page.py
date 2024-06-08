@@ -10,7 +10,7 @@ class BasePage:
 
     def __init__(self, driver: WebDriver):
         self.driver = driver
-        self.wait_5s = WebDriverWait(self.driver, 10)
+        self.wait_5s = WebDriverWait(self.driver, 3)
 
     @allure.step('Open the page')
     def open(self):
